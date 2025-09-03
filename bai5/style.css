@@ -1,0 +1,64 @@
+body{
+    margin: 0px;
+}
+ul{
+    margin: 0px;
+}
+.DanhMuc{
+    background-color: #2fa4e7;
+    padding: 20px;
+}
+.DanhMuc-DanhSach{
+    display: flex;
+    list-style: none; /*dùng để xóa dấu chấm của thẻ list */  
+}
+.DanhMuc_Muc{
+    margin: 10px;
+}
+.DanhMuc_LienKet{
+    color: white;
+    text-decoration: none;
+    font-size: larger;
+}
+.DanhMuc_LienKet:hover {
+    color: green;
+}
+.logo{
+    background-color: red;
+    height: 70px;
+}
+#main_left{
+    width: 80%;
+    border-radius: 50px;
+}
+#main_right{
+    width: 20%;
+    height: 400px;
+    background-color: black;
+}
+main{
+    display: flex;
+}
+.Tieu_de{
+    background-color: #2fa4e7;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: larger;
+    border-radius: 20px 20px 0px 0px;
+
+}
+.danhsach_tintuc{
+    display: flex;
+    justify-content: space-between;
+}
+.baiviet{
+    height: 100px;
+    background-color: orange;
+    width: 32%;
+}
+.img{
+    height: 70%;
+    width: 100%;
+    background-color: antiquewhite;
+}
