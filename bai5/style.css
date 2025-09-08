@@ -6,7 +6,7 @@ ul{
 }
 .DanhMuc{
     background-color: #2fa4e7;
-    padding: 20px;
+    padding: 10px;
 }
 .DanhMuc-DanhSach{
     display: flex;
@@ -24,8 +24,9 @@ ul{
     color: green;
 }
 .logo{
-    background-color: red;
+    background-color: lightblue;
     height: 70px;
+    display: flex;
 }
 #main_left{
     width: 80%;
@@ -34,19 +35,21 @@ ul{
 #main_right{
     width: 20%;
     height: 400px;
-    background-color: black;
+    background-color: lightgray;
 }
 main{
     display: flex;
 }
+.Tin_Tuc{
+    background-color: white;
+}
 .Tieu_de{
     background-color: #2fa4e7;
-    padding: 20px;
     color: white;
     text-decoration: none;
-    font-size: larger;
-    border-radius: 20px 20px 0px 0px;
-
+    font-size: 10px;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
 }
 .danhsach_tintuc{
     display: flex;

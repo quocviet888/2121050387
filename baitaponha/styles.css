@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.dautrang {
+    padding: 10px;
+    background-color: blue;
+}
+.menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+.danhmuc {
+    margin-right: 29px;
+    color: white;
+    text-decoration: none;
+}
+.danhmuc:hover {
+    color: yellow;
+}
+.logo {
+    margin-top: 0px;
+    display: flex;
+    background-color: lightgray;
+    padding: 10px;
+
+}
+
+.bentrai {
+    width: 80%
+}
+.tintuc {
+    padding-bottom: 10px;
+}
+.tieude{
+    color: white;
+    background-color: blue;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px 10px 0px 0px;
+    justify-content: space-between;
+}
+.noidung {
+    display: flex;
+    justify-content: space-between;
+}
+.baiviet {
+    height: auto;
+;
+    width: 32%;
+    justify-content: center;
+    border-radius: 0px 0px 10px 10px;
+}
+.baiviettieude {
+     height: 20%;
+    text-align: end;
+    color: white;
+    background-color: lightblue
+}
+.hinhanh {
+    background-color: white;
+}
+
+
+
+.BaiViet_NoiDung {
+    height: 50%;
+    background-color: lightblue;
+    text-align: justify;
+    padding: 10px;
+}
+.thongbao{
+    background-color: white;
+    margin-top: 50px;
+}
+.thongbaodanhsach{
+    display: flex;
+}
+.thongbaotrai{
+    width: 30%;
+    padding: 10px;
+    background-color: white;
+}
+.main{
+    display: flex;
+    padding: 10px;
+}
+.thongbaotrailogo{
+    height: 70%;
+}
+.thongbaotraithoigian{
+    font-size: 15px;
+    margin-left: 50px;
+}
+.thongbaotrainghihoc{
+   font-size: 15px;
+   margin-bottom: 10px;
+}
+.thongbaophai{
+    width: 70%;
+}
+.thongbaophai table{
+    width: 100%;
+}
+.huongdantrai{
+    background-color: white;
+    padding: 0px;
+    margin-top: 10px;
+
+}
+.huongdantrai table{
+    width: 100%;
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+    padding: 0px;
+}
+.benphai {
+    width: 20%;
+}
+.anh{
+    height: auto;
+    background-color: aqua;
+    margin-top: 0px;
+}
+.anh2{
+    background-color: black;
+    margin-top: 10px;
+    height: auto;
+}
+.phancuoi{
+    justify-content: center;
+    text-align: center;
+}
+.hinhanh img{
+    width: 100px;
+}
+.thongbaotrailogo img{
+    width: 100px;
+}
+.mk{
+ display: block;
+ text-align: right;
+}
+input {
+    width: 90%;
+}
