@@ -1,0 +1,152 @@
+<!-- 📌 Với cấu trúc này:
+
+.news-section = khối cha.
+
+.news-title = tiêu đề chính ("TIN TỨC").
+
+.news-list = flex container.
+
+.news-item = từng khung tin tức.
+
+.news-date, .news-image, .news-text = nội dung chi tiết trong khung.
+
+👉 Khi thêm 5 hoặc 6 .news-item, chúng sẽ tự động xuống hàng nhờ flex-wrap: wrap -->
+<!-- Windows + Shift + S chụp ảnh màn hình -->
+ <div class="benphai">
+            <div class="dangnhapphai">
+                <div class="tieude">Đăng nhập</div>
+                <form>
+                    <div style="display: block;text-align: center; margin-bottom: 15px;">
+                    <input type="text" name="tên đăng nhập" value="212121212">
+                   </div>
+                   <div style="display: block;text-align: center;  margin-bottom: 15px;">
+
+                    <input type="password">
+                    </div>
+                    <div class="mk">
+                        <a href="https://daotaodaihoc.humg.edu.vn/#/forgetpass"><i>Quên mật khẩu</i></a>
+                    </div>
+
+                    <button style="width: 100%;background-color: blue;margin-bottom: 10px;">Đăng nhập</button><br>
+                    <button style="width: 100%;background-color: aqua;margin-bottom: 10px;">mycrosoft</button>
+                
+
+
+                    <div>
+                        <b>Email</b> <br>
+                        <input type="eamil" name="email" placeholder="Dạng @gmail.com">
+                    </div>
+                </form>
+
+
+            <h1>Form</h1>
+ <form>
+    <div>
+       <b>Họ và tên:</b>
+       <input type="text" name="hoten" placeholder="Nhập tên vào đây">
+    <br>
+    <div>
+        <b>Năm</b>
+        <input type="text" name="nam" value="2025" readonly> 
+        <!--  readonly k sửa được-->
+    </div>
+    <br>
+    <div>
+        <b>giới thiệu chi tiết về bản thân</b> <br>
+        <textarea name="gioithieu">Nhập giới thiệu...</textarea>
+    </div>
+
+    <div>
+        <b>Email</b> <br>
+        <input type="eamil" name="email" placeholder="Dạng @gmail.com">
+    </div>
+     <br>
+    </div>
+    <br>
+    
+
+    <div>
+        <b>số điện thoại:</b>
+        <input name="sodienthoai"
+        type="tel" placeholder="Dạng số: 09xxxxxxxx"
+        required pattern="([0]{1}([0,3,9]{1})([0-9]{8}))">
+
+     </div>
+     <br>
+     <div>
+        <b>Giới tính</b> <br>
+        <input type="radio" name="gioitinh" value="nam">Nam<br>
+         <input type="radio" name="gioitinh" value="nu">Nữ<br>
+         <input type="radio" name="gioitinh" value="khongxacdinh">Không xác định<br>
+     </div>
+     <div>
+        <b>Sở thích</b> <br>
+        Game:<input type="checkbox" name="sothich" value="game"><br>
+        Music:<input type="checkbox" name="sothich" value="music"><br>
+        Sport:<input type="checkbox" name="sothich" value="sport"><br>
+     </div>
+     <br>
+     <div>
+        <b>Trình duyệt ưa thích</b>
+        <input list="browsers">
+        <datalist id="browsers">
+            <option value="Internet Explorer">
+            <option value="Fire fox">
+            <option value="chrome">
+            <option value="opera">
+        </datalist>
+        <br>
+        <select name="browsers">
+            <option value="Internet Explorer">Internet Explorer</option>
+            <option value="Fire fox">firrfox</option>
+            <option value="chrome">chrome</option>
+            <option value="opera">opera</option>
+        </select>
+     </div>
+     <div>
+        0<input type="range" value="20">100
+     </div>
+     <div>
+        <b>Tuổi</b> <br>
+        <input type="number" name="tuoi" step="0.5">
+     </div>
+     <div>
+        <input type="button">
+     </div>
+     <br>
+     <div>
+        <b>Ngày tháng năm sinh</b>
+        <input type="date" name="ngaythangnamsinh">
+     </div>
+     <br>
+     <div>
+        <b> Màu sắc yêu thích</b>
+        <input type="color" name="id">
+
+     </div>
+     <br>
+     <div>
+        <b>chọn ảnh đại diện</b>
+        <input type="file">
+     </div>
+     <br>
+     <div>
+        <b>Mật khẩu</b>
+        <input type="password">
+     </div>
+      <div>
+     <input type="submit">
+     </div>
+    <div>
+        <b>reset</b>
+        <input type="reset">
+    </div>
+ </form>
+ <iframe  src="https://www.youtube.com/embed/30KI5SuECuc?si=t7UeOyq4CBq5ooqE"></iframe>
+ <video controls width="560" height="315">
+        <source src="1.mp4" type="video/mp4">
+    </video>
+
+    <audio controls>
+        <source src="BauTroiMoi.mp3" type="audio/mp3">
+    </audio>

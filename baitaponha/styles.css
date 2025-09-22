@@ -94,10 +94,7 @@ body {
     padding: 10px;
     background-color: white;
 }
-.main{
-    display: flex;
-    padding: 10px;
-}
+
 .thongbaotrailogo{
     height: 70%;
 }
@@ -169,3 +166,4 @@ input {
 .anhdai img{
     width: 100%;
 }
+

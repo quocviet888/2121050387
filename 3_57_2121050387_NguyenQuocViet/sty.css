@@ -1,0 +1,53 @@
+header{
+    display: flex;
+    background-color: red;
+    gap:1200px;
+    margin: auto;
+}
+.chungnhau{
+    display: flex;
+    margin-top: 20px;
+    gap:50px;
+}
+.bentrai{
+    width: 30%;
+    background-color: beige;
+    
+}
+.benphai{
+    width: 70%;
+    background-color: bisque;
+    margin-right: 100px;
+}
+.noidungtrong{
+    display: flex;
+    gap:200px;
+}
+.anh{
+    display: block;
+}
+.listtt{
+    display: flex;
+    background-color: blue;
+    gap: 20px;
+
+    
+}
+.noidung0{
+    margin-top: 10px;
+}
+.oduoi{
+    margin-top: 20px;
+    width: 70%;
+    margin: auto;
+    margin-left: 380px;
+}
+.danhmuc{
+    list-style: none;
+}
+.bai2{
+    list-style: none;
+}
+.danhmuc{
+    text-decoration: none;
+}

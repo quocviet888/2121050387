@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    
+   <script>
+      document.writeln("Hello World!" + "<br>");   
+
+      let hoTen = "Nguyen Quoc Viet" + "<br>";
+
+    //   để khai báo biến JS dùng let hoặc var
+    //   cú pháp: let tên biến = giá trị;
+    //   Để nối chuỗi JS dùng dấu +
+
+
+
+      document.writeln(hoTen);
+
+
+      //let soThuNhat = 5;
+      //let soThuHai = "5";
+      //let ketQua = 0;
+
+      //ketQua = soThuNhat / soThuHai;
+
+    //   soThuNhat += soThuHai;
+    //    soThuNhat = soThuNhat + soThuHai
+
+    //    soThuNhat *= soThuHai;
+    //   soThuNhat = soThuNhat * soThuHai
+
+    //    soThuNhat %= 3; 
+    // chia lấy số dư
+    let soThuNhat = 5;
+    let soThuHai = "5";
+    let ketQua = true
+    //  == != === !== ! > < >= <=
+    // document.writeln(soThuNhat !== soThuHai + "<br>");
+
+  //   document.writeln(soThuNhat);
+
+    //   document.writeln(ketQua);
+
+    //   Phép nhân: *
+    //   Phép chia: /
+    //   Tăng 1: ++
+    //   Giảm 1: --
+    //   ketQua = soThuNhat / soThuHai
+    //   Đặt trước ketQUa để ra kết quả
+
+    let thongTinSinhVien = {
+        hoTen: "Nguyen Quoc Viet",
+        mssv: "2121050387",
+        gioiTinh: true,
+        tuoi: 22,
+        lop: "Đại học_Khoa học máy tính_K66"
+    }
+
+    let diaChi={
+        thanhpho:"Hà Nội",
+        quan:"Bắc Từ Liêm",
+        sonha:"33",
+    }
+    thongTinSinhVien.diachime= diaChi;
+
+    let namNay = 2025;
+
+    document.writeln(
+        "Xin Chào :" 
+        + thongTinSinhVien.hoTen 
+        +" " +"so Nha " 
+        + thongTinSinhVien.diachime.sonha + "<br>"
+        + "Nam nay "
+        + thongTinSinhVien.tuoi
+        + " tuoi" + "<br>"
+        + "sinh nam "
+        + (namNay - thongTinSinhVien.tuoi)
+    );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+   </script>
+
+
+
+</body>
+</html>

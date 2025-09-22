@@ -1,0 +1,52 @@
+.container{
+    display: flex;
+ 
+    padding: 20px;
+    
+    background-color: red;
+}
+.bentrai{
+    width: 50%;
+    
+}
+.noidung{
+    
+    text-align: center;
+}
+.benphai{
+    width: 50%;
+
+    
+   
+}
+.noidung p{
+    margin-top: 150px;
+}
+.anh img{
+    width: 300px;
+    margin-top: 50px;
+}
+
+.noidungphai{
+    padding-bottom: 20px;
+}
+.dui{
+    margin-top: 193px;
+}
+.top{
+    margin-bottom: 500px;
+}
+.noidungngoai{
+    background-color:whitesmoke;
+    display: flex;
+    gap: 70px;
+    margin: auto;
+
+    
+}
+form{
+    margin-top: 70px;
+}
+.tieude{
+    margin-top: 90px;
+}
