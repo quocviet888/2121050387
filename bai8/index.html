@@ -57,10 +57,11 @@
         // thay thế hello bằng hi nếu giống.
         document.writeln(myString.replace("Hello","Hi")+ "<br>");
 
-        document.writeln(myString.toLowerCase()+"<br>");
+        document.writeln(myString.toLocaleUpperCase()+"<br>");
 
         //indexOf trả về vị trí xuất hiện đầu tiên
         // nếu có : vị trí, nếu k : -1
+        // kiểm tra xem có chứa ký tự e hay không, có là true.
         document.writeln(myString.includes('e')+"<br>");
          // CÀNG NHIỀU DẤU CÁCH CÀNG LIỀN   
         document.writeln(myString.split('')+"<br>");
@@ -92,6 +93,7 @@
         //lấy các ngày tháng năm
         // lấy ngày
         document.writeln(toDay.getDate());
+        
         
 
         

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // mảng
+        let arr =[1,2,3,4,5,'a','b',5,6];
+        document.writeln(arr.length);
+        // lấy số 4
+       // document.writeln(arr[3]);
+       //tìm kiếm trong mảng có giá trị không
+       document.writeln(arr.indexOf('a'));
+       // trả về phần tử cuối trong mảng khi xuất hiện nhieuf lần
+       document.writeln(arr.lastIndexOf(5));
+        // trả về false true, ít dùng
+       document.writeln(Array.isArray(arr));
+
+       let a,b,c,d;
+       a =[1,2,3];
+       b = "javascript";
+       c = [42,"VBScript"];
+       //concat để nối a,b,c
+       d = a.concat(b,c);
+    // thay thế javascript bằng 4
+       d[3] =4;
+       // thêm phần tử vào cuối mảng
+       d.push("Kiên");
+       //xóa phần tử cuối cùng mảng
+       e = d.pop()
+       document.writeln(d);
+        // kiểm tra xem có trong biến k
+       //document.writeln(Array.isArray(d));
+       // muốn gạch ngang thêm -
+        //document.writeln(d.join("-"));
+        // muốn gạch chéo
+        //document.writeln(d.join("/"));
+        // đảo các phần tử trong mảng
+        document.writeln(d.reverse());
+
+        // push() thêm phần tử cuối cùng vào mảng
+        // pop() xóa phần tử cuối cùng. arr.pop();
+        // shift() xóa phần tử đầu tiên.
+        // arr.shift;
+        // unshift(): thêm phần tử vào đầu mảng
+        //arr.unshift(0);
+
+        //IF - ELSE
+        let today = new Date();
+        let now = today. getHours();// giờ hiện tại
+        if(now < 10) {
+            document.writeln(" chào buổi sáng");
+        }else if (now >=10 && now <12) {
+            document.writeln(" chào buổi trưa");
+        }else if(now >=12 && now <17) {
+            document.writeln(" chào buổi chiều");
+        }
+        else if(now >=17 && now <22) {
+            document.writeln(" chào buổi tối");
+        }
+        else  {
+            document.writeln(" chào buổi đêm");
+        }
+        // kiểm tra só chẵn lẻ
+        let so = 10;
+        if ( so%2 == 0) {
+            document.writeln("là số chẵn");
+        } 
+        else {
+            document.writeln(" là số lẻ"); 
+        }
+
+        let so1= 10000000000000000000000001;
+        //document.writeln(so[so.length-1]);
+        let soCuoicung = parseInt(so1[so1.length-1]);
+        //kiểm tra số chẵn lẻ
+        if (soCuoicung %2 ==0) {
+            document.writeln("là so chẵn");
+        }
+        else {
+            document.writeln(" là số lẻ");
+        }
+
+        
+
+    </script>
+</body>
+</html>
