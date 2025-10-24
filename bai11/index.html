@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Bài 11</h1>
+    <!-- Tạo hàm JS tính điểm của sinh viên dụa vào 3 điểm A,B,C
+     bIẾT điểm tổng = A*0.6 + B*0.3 +C*0.1 -->
+      <h2>Tính điểm</h2>
+      <div>
+        Điểm A: <input type="number" id="diemA" placeholder="Nhập điểm A">
+      </div>
+      <div>
+        Điểm B: <input type="number" id="diemA" placeholder="Nhập điểm B">
+      </div>
+      <div>
+        Điểm C: <input type="number" id="diemA" placeholder="Nhập điểm C">
+      </div>
+      <div>
+        <button ondblclick="xemKetQua()">Tinh Tong</button>
+      </div>
+
+    <script>
+        // function point( A,B,C){
+        //     return ((A*0.6)+(B*0.3)+(C*0.1))
+        // }
+        // document.writeln("ĐIỂM "+ point(7,8,9))
+       function xemKetQua() {
+        let diemA = document.getElementById('diemA').value;
+        let diemB = document.getElementById('diemA').value;
+        let diemC = document.getElementById('diemA').value;
+        tinhDiem(diemA,diemB,diemC);
+       }
+       
+
+
+        function tinhDiem (a,b,c){
+            let tong;
+            if (kiemTraHopLe(a,b,c)== true){
+                tong = a * 0.6 + b * 0.3 + c *0.1;
+                document.writeln(tong);
+            }
+            
+
+        }
+       function kiemTraHopLe(a,b,c) {
+
+        if (a < 0 || a > 10 || typeof (a) != 'number'){
+            document.writeln("Điểm A không hợp lệ");
+
+        }
+
+         if (b < 0 || b > 10 || typeof (b) != 'number'){
+            document.writeln("Điểm B không hợp lệ");
+            
+        }
+         if (c < 0 || c > 10 || typeof (c) != 'number'){
+            document.writeln("Điểm C không hợp lệ");
+            
+        }
+       }
+    //  let a = "10";
+    //  let b=5;
+    //  let c=9;
+    //  tinhDiem(a,b,c);
+     
+    </script>
+          
+
+
+</body>
+</html>
