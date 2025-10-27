@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính chỉ số BMI</title>
+</head>
+<body>
+    <h1>Tính chỉ số BMI</h1>
+
+    <div>
+        Cân nặng (kg): <input type="number" id="cannang" placeholder="Nhập cân nặng">
+    </div>
+    <div>
+        Chiều cao (m): <input type="number" id="chieucao" placeholder="Nhập chiều cao" step="0.01">
+    </div>
+    <div>
+        <button ondblclick="xemKetQua()">Kiểm tra chỉ số</button>
+    </div>
+
+    <script>
+        // Hàm khi nhấn đúp nút
+        function xemKetQua() {
+            let cannang = parseFloat(document.getElementById('cannang').value);
+            let chieucao = parseFloat(document.getElementById('chieucao').value);
+            tinhBMI(cannang, chieucao);
+        }
+
+        // Hàm tính chỉ số BMI
+        function tinhBMI(cannang, chieucao) {
+            if (kiemTraHopLe(cannang, chieucao) == true) {
+                let bmi = cannang / (chieucao * chieucao);
+                let ketQua;
+                let hinhAnh;
+
+                // Phân loại theo chỉ số BMI
+                if (bmi < 18.5) {
+                    ketQua = "Thiếu cân";
+                    hinhAnh = "thieu.png";
+                } else if (bmi >= 18.5 && bmi <= 24.9) {
+                    ketQua = "Bình thường";
+                    hinhAnh = "binhthuong.png";
+                } else if (bmi >= 25 && bmi <= 29.9) {
+                    ketQua = "Thừa cân";
+                    hinhAnh = "thua.png";
+                } else if (bmi >= 30 && bmi <= 39.9) {
+                    ketQua = "Béo phì cấp độ 1-2";
+                    hinhAnh = "beocapdo1.png";
+                } else {
+                    ketQua = "Béo phì nặng";
+                    hinhAnh = "beonang.png";
+                }
+
+                // In ra kết quả
+                document.writeln("Chỉ số BMI của bạn là: " + bmi + "<br>");
+                document.writeln("Phân loại: " + ketQua + "<br>");
+                document.writeln("<img src='" + hinhAnh + "' width='200'>");
+            }
+        }
+
+        // Hàm kiểm tra nhập hợp lệ
+        function kiemTraHopLe(cannang, chieucao) {
+            if (isNaN(cannang) || cannang <= 0) {
+                document.writeln(" Cân nặng không hợp lệ<br>");
+                return false;
+            }
+            if (isNaN(chieucao) || chieucao <= 0) {
+                document.writeln(" Chiều cao không hợp lệ<br>");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>
