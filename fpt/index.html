@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
 </head>
 
 <body>
@@ -31,17 +33,23 @@
                 <div>
                     <button class="dangnhap">Đăng nhập</button>
                 </div>
+               <div>
+                 <button id="nutBanner" onclick="hienBanner()">Hiện Banner</button>
+               </div>
             </div>
         </div>
     </header>
     <main>
-        <div class="quangcao">
+        <div class="quangcao" id="banner">
             <img src="09_68bfea5810013f0001205210.jpg" alt="">
         </div>
+        
         <div class="container">
             <div>
                 <div style="display: flex; justify-content: center;">
-                    <img class="banner" src="640x396-muado.jpg" alt="">
+                    <button onclick="traler()">
+                        <img class="banner" src="640x396-muado.jpg" alt="">
+                    </button>
                 </div> 
                 <div style="display: flex; justify-content: center;">
                     <img class="qc" src="logowebsite4x_1748221195181.png" alt="">
@@ -405,6 +413,8 @@
          </div>
     </div>
     </footer>
+    
+
 </body>
 
 </html>
